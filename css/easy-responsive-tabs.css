@@ -1,0 +1,231 @@
+﻿
+ul.resp-tabs-list, p {
+    margin: 0px;
+    padding: 0px;
+}
+
+.resp-tabs-list li {
+    font-weight: 600;
+    font-size: 13px;
+    display: inline-block;
+    padding: 13px 15px;
+    margin: 0;
+    list-style: none;
+    cursor: pointer;
+}
+
+.resp-tabs-container {
+    padding: 0px;
+    background-color: #fff;
+    clear: left;
+}
+
+h2.resp-accordion {
+    cursor: pointer;
+    padding: 5px;
+    display: none;
+}
+
+.resp-tab-content {
+    display: none;
+    padding: 15px;
+}
+
+.resp-tab-active {
+    /*border: 1px solid #c1c1c1;*/
+    border-bottom: none;
+    margin-bottom: -1px !important;
+    padding: 12px 14px 14px 14px !important;
+}
+
+.resp-tab-active {
+    border-bottom: none;
+    background-color: #fff;
+}
+
+.resp-content-active, .resp-accordion-active {
+    display: block;
+}
+
+/*.resp-tab-content {
+    border: 1px solid #c1c1c1;
+}*/
+
+h2.resp-accordion {
+    font-size: 13px;
+    border: 1px solid #c1c1c1;
+    border-top: 0px solid #c1c1c1;
+    margin: 0px;
+    padding: 10px 15px;
+}
+
+h2.resp-tab-active {
+    border-bottom: 0px solid #c1c1c1 !important;
+    margin-bottom: 0px !important;
+    padding: 10px 15px !important;
+}
+
+h2.resp-tab-title:last-child {
+    border-bottom: 12px solid #c1c1c1 !important;
+    background: blue;
+}
+/*-----------Vertical tabs-----------*/
+.resp-vtabs ul.resp-tabs-list {
+    width: 25%;
+    border-radius: 4px;
+    float: left;
+}
+
+.resp-vtabs .resp-tabs-list li {
+    display: block;
+    padding: 15px 15px;
+    margin: 0 auto;
+    cursor: pointer;
+    color: #6bb6e2;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    border-top: 1px solid #6bb6e2;
+    background-color: #0872bc;
+    width: 93%;
+    position:relative;
+}
+.resp-vtabs .resp-tabs-list li p{
+
+    float:left;
+}
+/*.resp-vtabs .resp-tabs-list li:before {
+    counter-increment: numList;
+    content: counter(numList);
+    float:left;
+    font: bold 15px sans-serif;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border-radius:50%;
+    margin: auto;
+    vertical-align: middle;
+    border:2px solid #1380c1;
+    padding:2%;
+    color:#1380c1;
+}*/
+.resp-vtabs .resp-tabs-container {
+    padding: 0px;
+    background-color: #fff;
+    width: 75%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    clear: none;
+    /* height:100%; */
+    float: left;
+}
+
+.resp-vtabs .resp-tab-content {
+    border: none;
+}
+
+.resp-vtabs li.resp-tab-active {
+    border: none;
+    border-right: none;
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
+    margin-right: -1px !important;
+    padding: 14px 15px 15px 14px !important;
+    width: 100%;
+    border-top: none;
+    border-left: 7px solid #ad724a;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    color: #ad724a;
+}
+
+.resp-vtabs li.resp-tab-active span{
+    border: 2px solid #ad724a;
+    color: #ad724a;
+    top:4px;
+}
+.resp-vtabs{
+    float:left;
+    display:table;
+}
+.resp-arrow {
+    width: 0;
+    height: 0;
+    float: right;
+    margin-top: 3px;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 12px solid #c1c1c1;
+}
+
+h2.resp-tab-active span.resp-arrow {
+    border: none;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 12px solid #9B9797;
+}
+
+/*-----------Accordion styles-----------*/
+h2.resp-tab-active {
+    background: #DBDBDB !important;
+}
+.resp-easy-accordion  h2.resp-accordion {
+    display: block;
+}
+.resp-easy-accordion .resp-tab-content {
+    border: 1px solid #c1c1c1;
+}
+
+.resp-easy-accordion .resp-tab-content:last-child {
+    border-bottom: 1px solid #c1c1c1 !important;
+}
+
+.resp-jfit {
+    width: 100%;
+    margin: 0px;
+}
+
+.resp-tab-content-active {
+    display: block;
+}
+
+h2.resp-accordion:first-child {
+    border-top: 1px solid #c1c1c1 !important;
+}
+
+/*Here your can change the breakpoint to set the accordion, when screen resolution changed*/
+
+@media only screen and (max-width: 1703px) {
+
+    .resp-vtabs .resp-tabs-container{height:auto;}
+}
+
+@media only screen and (max-width: 768px) {
+    ul.resp-tabs-list {
+        display: none;
+    }
+
+    h2.resp-accordion {
+        display: block;
+    }
+
+    .resp-vtabs .resp-tab-content {
+        border: 1px solid #C1C1C1;
+    }
+
+    .resp-vtabs .resp-tabs-container {
+        border: none;
+        float: none;
+        width: 100%;
+        min-height: initial;
+        clear: none;
+    }
+    .resp-accordion-closed {
+        display:none !important;
+    }
+    .resp-vtabs .resp-tab-content:last-child {
+        border-bottom: 1px solid #c1c1c1 !important;
+    }
+}
+

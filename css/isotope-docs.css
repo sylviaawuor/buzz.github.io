@@ -1,0 +1,461 @@
+/* ---- responsive ---- */
+
+.grid--animate-item-size-responsive .animate-item-size-item,
+.grid--animate-item-size-responsive .grid-sizer {
+  width: 20%;
+}
+
+.grid--animate-item-size-responsive .animate-item-size-item__content,
+.grid--animate-item-size-responsive .animate-item-size-item.is-expanded .animate-item-size-item__content {
+  width: 100%;
+  height: 100%;
+}
+
+/* item has expanded size */
+.grid--animate-item-size-responsive .animate-item-size-item.is-expanded {
+  width: 60%;
+}
+
+/* button
+------------------------- */
+
+.button {display: inline-block;padding: 5px 15px;margin-bottom: 10px;background: transparent;border: none;border-radius: 7px;font-weight: 400;cursor: pointer;font-size: 17px;font-family: 'Roboto', sans-serif;color: #505151}
+
+
+.button:active,
+.button.is-checked,
+.button.is-selected {color: #4474b4; }
+
+.button.is-checked,
+.button.is-selected {color: #4474b4;}
+
+
+/* hide radio inputs */
+.button input[type="radio"] { display: none; }
+
+*[data-license-property] {
+  color: #4BF;
+}
+
+
+/* edit-demo
+------------------------- */
+
+.edit-demo {
+  clear: both;
+  font-size: 0.92em;
+}
+
+/* element-item
+------------------------- */
+
+.element-item {
+  position: relative;
+  float: left;
+  width: 33.33%;
+  height: auto;
+  padding: 20px;
+  margin:0;
+  /*background: #888;*/
+  color: #262524;
+  overflow: hidden;
+}
+
+.element-item > * {
+  margin: 0;
+  padding: 0;
+  background-color:#000;
+}
+
+.element-item .name {
+  position: absolute;
+
+  left: 10px;
+  top: 60px;
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 0.8em;
+  font-weight: normal;
+}
+
+.element-item .symbol {
+  position: absolute;
+  left: 10px;
+  top: 0px;
+  font-size: 2.8em;
+  font-weight: bold;
+  color: white;
+}
+
+.element-item .number {
+  position: absolute;
+  right: 8px;
+  top: 5px;
+}
+
+.element-item .weight {
+  position: absolute;
+  left: 10px;
+  top: 76px;
+  font-size: 0.8em;
+}
+
+
+/* fizzy-bear-shirt
+------------------------- */
+
+.fizzy-bear-shirt {
+  margin: 40px 0;
+}
+
+.fizzy-bear-shirt__title {
+  font-size: 1.6rem;
+}
+
+.fizzy-bear-shirt__image {
+  display: block;
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+
+/* gh-button
+------------------------- */
+
+.gh-button {
+  display: inline-block;
+  background: none;
+  border: none;
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+}
+
+.gh-button__title,
+.gh-button__stat {
+  float: left;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 20px;
+  padding: 5px 10px;
+  border: 1px solid #d5d5d5;
+}
+
+.gh-button__icon {
+  height: 21px;
+  fill: #333;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.gh-button__title {
+  background-color: #eee;
+  background-image: linear-gradient(#fcfcfc, #eee);
+  border-radius: 4px 0 0 4px;
+}
+
+.gh-button__icon--github-logo {
+  margin-right: 0.2em;
+}
+
+.gh-button__stat {
+  border-left: 0;
+  border-radius: 0 4px 4px 0;
+  background: white;
+}
+
+.gh-button:hover { color: #333; }
+
+.gh-button:hover .gh-button__title {
+  background-color: #ddd;
+  background-image: linear-gradient(#eee, #ddd);
+}
+
+.gh-button:hover .gh-button__stat {
+  color: #4078c0;
+}
+
+.gh-button:hover .gh-button__icon--star {
+  fill: #4078c0;
+}
+
+/* grid
+------------------------- */
+
+
+
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- counting ---- */
+
+.grid--counting {
+  counter-reset: item;
+}
+
+.grid--counting .grid-item:before {
+  counter-increment: item;
+  content: counter(item);
+  display: block;
+  color: #555;
+  padding-top: 0.2em;
+  text-align: center;
+  font-size: 18px;
+}
+
+/* ---- horizontal ---- */
+
+/* horizontal examples need height */
+.grid--horizontal {
+  height: 334px;
+}
+
+/* ---- static banner ---- */
+
+.grid--has-banner {
+  position: relative;
+}
+
+.static-banner {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  background: hsla(210, 100%, 50%, 0.8);
+  z-index: 1;
+  padding: 2px 20px;
+  color: white;
+  pointer-events: none;
+}
+
+/* ---- fixed-width ---- */
+
+.grid--fixed-width {
+  width: 304px;
+}
+
+/* ---- stamp ---- */
+
+.grid--has-stamp {
+  position: relative;
+}
+
+/* ---- fit-width ---- */
+
+/* centered */
+.grid--fit-width {
+  margin: 0 auto;
+}
+
+/* grid-image-item
+------------------------- */
+
+.grid-image-item,
+.grid--images .grid-sizer { width: 33.33%; }
+
+.grid-image-item {
+  float: left;
+}
+
+.grid-image-item img {
+  display: block;
+  max-width: 100%;
+}
+
+/* grid-item
+------------------------- */
+
+.grid-item {
+  float: left;
+  width: 50px;
+  height: 50px;
+  background: #e6e5e4;
+  border: 2px solid hsla(0, 0%, 0%, 0.4);
+}
+
+.grid-item--width2 { width: 100px; }
+.grid-item--height2 { height: 100px; }
+
+.grid-item--width3 { width: 150px; }
+.grid-item--height3 { height: 150px; }
+
+.grid-item--gigante {
+  width: 150px;
+  height: 200px;
+}
+
+.grid--clickable .grid-item:hover {
+  border-color: #28F;
+  background: #8CF;
+  cursor: pointer;
+}
+
+/* ---- insert demo ---- */
+
+.grid-item .number {
+  line-height: 50px;
+  text-align: center;
+  color: #333;
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+/* ---- fluid-5-col ---- */
+
+.grid--fluid-5-col .grid-item,
+.grid--fluid-5-col .grid-sizer { width: 20%; }
+
+.grid--fluid-5-col .grid-item--width2 { width: 40%; }
+
+/* ---- grid--masonry-gutter ---- */
+
+.grid--has-gutter .grid-item--width2 {
+  width: 110px;
+}
+
+/* ---- grid--masonry-gutter-bottom ---- */
+
+.grid--masonry-gutter-bottom .grid-item {
+  margin-bottom: 10px;
+}
+
+.grid--masonry-gutter-bottom .grid-item--height2 {
+  height: 110px;
+}
+
+/* ---- grid--packery-gutter ---- */
+
+.grid--packery-gutter .grid-item--width2 { width: 110px; }
+.grid--packery-gutter .grid-item--height2 { height: 110px; }
+
+/* ---- grid--fluid-gutter ---- */
+
+.grid--fluid-gutter .grid-item,
+.grid--fluid-gutter .grid-sizer {
+  width: 22%;
+}
+
+.grid--fluid-gutter .gutter-sizer {
+  width: 4%;
+}
+
+.grid--fluid-gutter .grid-item--width2 {
+  width: 48%;
+}
+
+/* ---- masonry-horizontal ---- */
+
+.grid--masonry-horizontal-gutter .grid-item--height2 {
+  height: 110px;
+}
+
+/* ----  ---- */
+
+.grid--masonry-horizontal-gutter-right .grid-item {
+  margin-right: 10px;
+}
+
+.grid--masonry-horizontal-gutter-right .grid-item--width2 {
+  width: 110px;
+}
+
+/* ---- cells-by-row-element-sizing ---- */
+
+.grid--cells-by-row-element-sizing .grid-item {
+  width: 13%;
+}
+
+.grid--cells-by-row-element-sizing .grid-item--width2 {
+  width: 23%;
+}
+
+.grid--cells-by-row-element-sizing .grid-sizer {
+  width: 25%;
+  height: 110px;
+}
+
+/* ---- cells-by-column-element-sizing ---- */
+
+.grid--cells-by-column-element-sizing .grid-item {
+  height: 13%;
+}
+
+.grid--cells-by-column-element-sizing .grid-item--width2 {
+  height: 23%;
+}
+
+.grid--cells-by-column-element-sizing .grid-sizer {
+  height: 25%;
+  width: 110px;
+}
+
+/* ---- fitrows-gutter ---- */
+
+.grid--fit-rows-gutter .grid-item--width2 { width: 110px; }
+.grid--fit-rows-gutter .grid-item--width3 { width: 170px; }
+
+/* ---- filter blocks ---- */
+
+.grid-item--filter-block-red,
+.grid-item--filter-block-blue {
+  width: 60px;
+  height: 60px;
+}
+
+.grid--filter-blocks-large .grid-item--filter-block-red,
+.grid--filter-blocks-large .grid-item--filter-block-blue {
+  width: 80px;
+  height: 80px;
+}
+
+.grid-item--filter-block-red { background: #D00; }
+.grid-item--filter-block-blue { background: #19F; }
+
+
+
+
+/* grid-multi-item
+------------------------- */
+
+.grid-multi-item {
+  float: left;
+  width: 100px;
+  height: 100px;
+  background: #e6e5e4;
+  border: 2px solid #b6b5b4;
+  border-color: hsla(0, 0%, 0%, 0.4);
+}
+
+.grid-multi-item[data-color="blue"] { background: #19F; }
+.grid-multi-item[data-color="red"] { background: #D00; }
+.grid-multi-item[data-color="yellow"] { background: #FD0; }
+
+.grid-multi-item .number {
+  font-size: 4.0rem;
+  font-weight: 600;
+  color: white;
+  padding-top: 0.1em;
+  text-align: center;
+  line-height: 90px;
+  margin: 0;
+}
+@media only screen and (max-width: 1024px) {
+  .element-item{width:31%;}
+}
+
+@media only screen and (max-width: 768px) {
+  .element-item{width:46%;}
+  .button{padding: 5px;font-size: 12px;}
+}
+@media only screen and (max-width: 570px) {
+
+  .element-item {width: 48%;}
+}
+@media only screen and (max-width: 480px) {
+
+  .element-item{width: 100%;margin: 0;}
+
+
+
+
+}
